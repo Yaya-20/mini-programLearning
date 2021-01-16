@@ -1,13 +1,16 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!-- 
+  小程序的数据绑定 Mustache语法 双打括号
+ -->
+<view>
+  hello {{name}}
 </view>
+<view>
+  我的年龄  {{age + 10}}
+</view>
+<!-- 小程序的列表展示 wx:for-->
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+<!-- 事件监听 改变data中的数据 -->
+<view>{{counter}} </view>
+<button size="mini" bindtap="handleClick">+</button>
+<button size="mini" bindtap="handleDecrease">-</button>
