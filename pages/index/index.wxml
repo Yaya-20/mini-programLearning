@@ -11,3 +11,44 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- 
+  view 组件
+   属性 
+    hover-class
+    hover-start-time
+    hover-stay-time
+    hover-stop-propagation 阻止祖先元素出现点击态
+ -->
+ <view class="box">
+  我是view组件
+ </view>
+ <view hover-class="box1" hover-start-time="{{0}}" hover-stay-time="{{1000}}">
+   hello world
+ </view>
+ <view class="box2" hover-class="box2-hover">
+   我是box2
+  <view class="box3" hover-class="box3-hover" hover-stop-propagation>
+    我是box3
+  </view>
+
+ </view>
+<!-- 
+  image 组件
+  默认大小 320*240
+  inline-block
+
+  src属性 图片链接 相对地址/绝对地址
+  bindload  图片加载完毕时触发
+  lazy-load 图片懒加载（图片进入上下3屏的范围内）
+ -->
+ <image
+  wx:for="{{10}}"
+  show-menu-by-longpress
+  lazy-load
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/page-lifecycle.2e646c86.png"
+  bindload="handleBindLoad"
+ ></image>
+ <text>哈哈</text>
+ <!-- 选中相册中的图片，并显示 -->
+ <button bindtap="handleChooseImage">选择图片</button>
+ <image src="{{imageSrc}}"></image>

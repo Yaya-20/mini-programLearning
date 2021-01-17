@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    imageSrc: ''
   },
   // 事件处理函数
   bindViewTap() {
@@ -50,5 +51,20 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  handleChooseImage() {
+    wx.chooseImage({
+      success: res => {
+        console.log(res);
+        this.setData({
+          imageSrc: res.tempFilePaths[0]
+        })
+      }
+    })
+  },
+  handleBindLoad() {
+    console.log('handleBindLoad');
+    
   }
 })
