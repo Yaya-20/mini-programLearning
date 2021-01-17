@@ -1,7 +1,8 @@
 <!--pages/category/category.wxml-->
 <text>pages/category/category.wxml</text>
-<view>我是分类页面</view>
+<view bindtap="handleViewClick">我是分类页面</view>
 <!-- 展示用户信息的 开放能力中的open-data组件 -->
 <open-data type="userNickName"></open-data>
 <open-data type="userAvatarUrl"></open-data>
 <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
+<view>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eius ipsum amet repellat perferendis odit hic, expedita natus, dolorum itaque ducimus perspiciatis porro adipisci saepe animi veniam? Laudantium, doloremque doloribus.</view>
