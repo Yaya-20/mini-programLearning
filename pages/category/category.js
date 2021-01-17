@@ -1,4 +1,7 @@
 // pages/category/category.js
+const app = getApp()
+console.log(app.globalData);
+
 Page({
 
   /**
@@ -62,5 +65,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  // 获取用户的信息
+  handleGetUserInfo(event) {
+    console.log(event);
+    
   }
 })

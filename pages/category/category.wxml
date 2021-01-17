@@ -1,3 +1,7 @@
 <!--pages/category/category.wxml-->
 <text>pages/category/category.wxml</text>
 <view>我是分类页面</view>
+<!-- 展示用户信息的 开放能力中的open-data组件 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
