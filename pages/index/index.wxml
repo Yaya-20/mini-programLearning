@@ -11,3 +11,32 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- 
+  input 组件
+    type
+    value
+    password
+    placeholder
+ -->
+<input type="text" value="ok"/>
+<input type="text" password value="ok"/>
+<input type="number" />
+<input type="text" placeholder="哈哈" />
+<!-- input 事件 -->
+<input type="text"
+  bindinput="handleInput"
+  bindfocus="handleFocus"
+  bindblur="handleBlur"
+/>
+<!-- scroll-view 组件 -->
+<scroll-view class="container" scroll-x
+ bindscrolltoupper="handleToUpper"
+ bindscrolltolower="handleToLower"
+  bindscroll="handleScroll"
+>
+  <view wx:for="{{10}}" class="box">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="container1" scroll-y>
+  <view wx:for="{{10}}" class="box1">{{item}}</view>
+</scroll-view>

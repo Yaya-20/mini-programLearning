@@ -50,5 +50,27 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleInput(event) {
+    console.log('input', event);
+    
+  },
+  handleFocus(event) {
+    console.log('focus', event)
+  },
+  handleBlur(event) {
+    console.log('blur', event)
+  },
+  handleScroll(event) {
+    console.log('scroll', event);
+    
+  },
+  handleToUpper(event) {
+    console.log('left', event);
+    
+  },
+  handleToLower(event) {
+    console.log('right', event);
+    
   }
 })

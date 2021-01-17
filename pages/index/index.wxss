@@ -19,3 +19,27 @@
 .usermotto {
   margin-top: 200px;
 }
+
+input {
+  border: 1px solid red;
+}
+.container {
+  white-space: nowrap;
+}
+.box {
+  margin: 10px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9900;
+}
+.container1{
+  overflow: hidden;
+  height: 200px;
+}
+.box1{
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: #cccccc;
+}
