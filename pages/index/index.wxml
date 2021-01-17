@@ -11,3 +11,17 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- 
+  设置样式的3种方式
+    注意样式的作用域
+    注意样式的优先级
+ -->
+<!-- 行内样式 -->
+<view style="width: 200px; height:200px; color: #f90; background-color: #f0f;">哈哈</view>
+<!-- 页内样式  写在页面内的 wxss文件中-->
+<view class="container">呵呵呵</view>
+<!-- 全局样式 写在app.wxss 文件中 -->
+<view class="box">全局样式</view>
+<view class="box">全局样式</view>
+<!-- 3个样式同时作用于一个组件 -->
+<view style="background-color:#999" class="box1">样式优先级问题</view>

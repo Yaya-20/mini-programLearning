@@ -19,3 +19,15 @@
 .usermotto {
   margin-top: 200px;
 }
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: #00ffff;
+  color: #333333;
+}
+.box {
+  color: #ffff00;
+}
+.box1 {
+  background-color: #ff9900;
+}
