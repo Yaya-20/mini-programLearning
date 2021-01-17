@@ -11,3 +11,16 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view>{{time}}</view>
+<view>{{1 + 2}}</view>
+<view>{{0 ? 'true' : 'false'}}</view>
+<!-- wx:if wx:else wx:elif 类似于vue的v-if指令 -->
+<view wx:if="{{isShow}}">哈哈</view>
+<view wx:else>呵呵</view>
+<button bindtap="handleClick">按钮</button>
+<view wx:if="{{score > 90}}">优秀</view>
+<view wx:elif="{{score > 80}}">良好</view>
+<view wx:else="{{score > 70}}">及格</view>
+<button bindtap="handleAdd">+</button>
+<!-- hidden 属性 -->
+<!-- wx:if -->

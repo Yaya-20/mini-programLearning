@@ -7,7 +7,10 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    time : new Date().toLocaleString(),
+    isShow: false,
+    score: 88
   },
   // 事件处理函数
   bindViewTap() {
@@ -49,6 +52,23 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  onShow() {
+    setInterval(() => {
+      this.setData({
+        time: new Date().toLocaleString()
+      })
+    }, 1000)
+  },
+  handleClick() {
+    this.setData({
+      isShow: !this.data.isShow
+    })
+  },
+  handleAdd() {
+    this.setData({
+      score: this.data.score + 1
     })
   }
 })
