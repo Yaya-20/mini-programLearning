@@ -11,3 +11,11 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<!-- 
+  rpx responsive pixel 可以根据屏幕宽度进行自适应，规定屏幕宽度为750rpx
+  在iPhone6上， 屏幕宽度为375px， 共有750rpx  1rpx = 0.5px
+  开发时最好以 iPhone作为标准
+ -->
+<view class="box1">haha</view>
+<view class="box2">haha</view>
