@@ -11,3 +11,32 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- text 组件 -->
+<!-- 
+  常用属性
+  selectable 文本选中 默认为false
+  space 空格如何显示
+  decode 是否解码
+-->
+<!-- <text
+  selectable="{{true}}"
+>hello wrold</text>
+<text selectable>你好小程序</text>
+<text selectable space="emsp">你好 小程序</text>
+<text selectable space="ensp">你好 小程序</text>
+<text selectable space="nbsp">你好 小程序</text>
+<text decode>5 &gt; 3</text> -->
+<!-- 
+  button 
+    属性 
+      size 大小
+      type
+      plain
+ -->
+<button type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<button size="mini">按钮</button>
+<button type="warn" disabled>按钮</button>
+<button plain>按钮</button>
+<button loading>按钮</button>
+<button hover-class="pressed">按钮</button>

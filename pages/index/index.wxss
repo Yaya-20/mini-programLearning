@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.pressed {
+  background-color: #ff9900;
+  color: #fff;
+}
