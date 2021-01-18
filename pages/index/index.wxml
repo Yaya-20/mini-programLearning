@@ -24,3 +24,30 @@
 <button bindtap="handleAdd">+</button>
 <!-- hidden 属性 -->
 <!-- wx:if -->
+<!-- 
+  wx:for 
+  可以遍历数组/数字/字符串
+-->
+<!-- <view wx:for="{{['a','b', 'c']}}">{{item}}-{{index}}</view>
+<view wx:for="{{3}}">{{item}}={{index}}</view>
+<view wx:for="{{'abcdefg'}}">{{item}}*{{index}}</view> -->
+
+<!-- blockb标签 -->
+<!-- <block wx:for="{{3}}">
+  <button>安安</button>
+  <text>文字</text>
+</block>  -->
+<!-- 
+  起别名
+  wx:for-item="xxx"
+  wx:for-index='yyy'
+ -->
+ <!-- 
+   wx:key 的作用
+   dom diff对比 提高性能
+  -->
+<block wx:for="{{[[1,2,3],['a','b','c'],['A','B','C']]}}" wx:for-item='a' wx:key='{{index}}'>
+  <block wx:for="{{a}}" wx:for-item='b' wx:key="{{index}}">
+    <view>{{b}}</view>
+  </block>
+</block>
