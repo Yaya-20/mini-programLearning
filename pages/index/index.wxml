@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<include src="/template/header.wxml"/>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -11,3 +12,21 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<!-- template 模版的使用 
+
+-->
+<!-- 用import标签将template引入 -->
+<import src="/template/template.wxml"></import>
+
+<!-- <import src="../../template/template.wxml"></import> -->
+<template is="cpn" data="{{text1: '按钮', text2: '我是text组件'}}"></template>
+<template is="cpn" data="{{text1: '提交', text2: '我是text333组件'}}"></template>
+<template is="cpn" data="{{text1: '取消', text2: '我是text44组件'}}"></template>
+
+<!-- include 
+  可以将目标文件中除了 <template /> <wxs /> 外的整个代码引入，相当于是拷贝到include位置 
+  实现代码的复用
+  inclue 支持循环导入 
+-->
+<include src="/template/footer.wxml"/>

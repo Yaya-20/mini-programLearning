@@ -1,0 +1,5 @@
+<view>
+  <include src="/template/nav.wxml" />
+  <view>我是header组件</view>
+  <button>提交</button>
+</view>

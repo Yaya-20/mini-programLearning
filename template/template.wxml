@@ -1,0 +1,4 @@
+<template name="cpn">
+  <button>{{text1}}</button>
+  <text>{{text2}}</text>
+</template>

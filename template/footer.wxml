@@ -1,0 +1,4 @@
+<view>
+  <view>我是footer组件</view>
+  <button>按钮</button>
+</view>
