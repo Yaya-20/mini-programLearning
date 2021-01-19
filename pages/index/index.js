@@ -50,5 +50,8 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleAdd(value) {
+    return 2 + vlaue
   }
 })

@@ -11,3 +11,25 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- 错误的写法 -->
+<!-- <view>{{handleAdd(3) + 2}}</view> -->
+
+<wxs module="info">
+  // 给wxs加module属性
+  var str = 'aaaa'
+  var name = '333'
+  function sum(value) {
+    return 3 + value
+  }
+  // 导出
+  module.exports = {
+    str: str,
+    name: name,
+    sum: sum
+  }
+</wxs>
+<view>{{info.str}}</view>
+<view>{{info.sum(33)}}</view>
+<!-- 注意用src引入wxs的时候，只能用相对路径 -->
+<wxs src="./index.wxs" module="com"></wxs>
+<view>{{com.sum(1, 100)}}</view>
