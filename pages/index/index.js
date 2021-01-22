@@ -50,5 +50,38 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleBtnClick(e) {
+    console.log('click', e);
+    
+  },
+
+  handleTouchstart() {
+    console.log('touchstart');
+    
+  },
+  handleTouchmove() {
+    console.log('touchmove');
+    
+  },
+  handleTouchend(e) {
+    console.log('touchend', e);
+    
+  },
+  handleLongpress() {
+    console.log('longpress');
+    
+  },
+  handleTap() {
+    console.log('tap');
+    
+  },
+  handleOuterTap(e) {
+    console.log('outer', e);
+    
+  },
+  handleInnerTap(e) {
+    console.log('inner', e);
+    
   }
 })

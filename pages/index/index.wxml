@@ -11,3 +11,22 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<button bindtap="handleBtnClick">按钮</button>
+<!-- 1.4 之后推荐 bind:tap 这中写法 -->
+<button bind:tap="handleBtnClick" id='btn' data-index='3'>按钮</button>
+<button catch:tap="handleBtnClick">按钮</button>
+<!--  常见的事件类型
+  事件对象
+-->
+<view class="box"
+  bind:touchstart="handleTouchstart"
+  bind:touchmove="handleTouchmove"
+  bind:touchend="handleTouchend"
+  bind:longpress="handleLongpress"
+  bind:tap="handleTap"
+></view>
+
+<view class="outer" bindtap="handleOuterTap" id="outer">
+  outer
+  <view class="inner" bindtap="handleInnerTap" id="inner">inner</view>
+</view>
