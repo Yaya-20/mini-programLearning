@@ -11,3 +11,45 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="box">
+  <block wx:for="{{list}}">
+    <view class="item" bindtap="handleItemTap" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+  </block>
+</view>
+<!-- 事件的捕获和冒泡 -->
+<!-- <view class="view1" bindtap="handelView1Tap" capture-bind:tap="handleView1Capture">
+  view1
+  <view class="view2" bindtap="handelView2Tap" capture-bind:tap="handleView2Capture">
+    view2
+    <view class="view3" bindtap="handelView3Tap" capture-bind:tap="handleView3Capture">
+      view3
+    </view>
+  </view>
+</view> -->
+<!-- <view class="view1" bind:tap="handelView1Tap" capture-catch:tap="handleView1Capture">
+  view1
+  <view class="view2" bindtap="handelView2Tap" capture-bind:tap="handleView2Capture">
+    view2
+    <view class="view3" bindtap="handelView3Tap" capture-bind:tap="handleView3Capture">
+      view3
+    </view>
+  </view>
+</view> -->
+<!-- <view class="view1" bind:tap="handelView1Tap" capture-bind:tap="handleView1Capture">
+  view1
+  <view class="view2" bindtap="handelView2Tap" capture-bind:tap="handleView2Capture">
+    view2
+    <view class="view3" catchtap="handelView3Tap" capture-bind:tap="handleView3Capture">
+      view3
+    </view>
+  </view>
+</view> -->
+<view class="view1" bind:tap="handelView1Tap" capture-bind:tap="handleView1Capture">
+  view1
+  <view class="view2" catch:tap="handelView2Tap" capture-bind:tap="handleView2Capture">
+    view2
+    <view class="view3" bind:tap="handelView3Tap" capture-bind:tap="handleView3Capture">
+      view3
+    </view>
+  </view>
+</view>

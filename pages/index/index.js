@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list: ['apple', 'xiaomi', 'huxwei', 'suwang']
   },
   // 事件处理函数
   bindViewTap() {
@@ -50,5 +51,33 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  handleItemTap(event) {
+    console.log(event);
+    
+  },
+  handelView1Tap() {
+    console.log('view1Tap');
+    
+  },
+  handelView2Tap() {
+    console.log('view2Tap');
+    
+  },
+  handelView3Tap() {
+    console.log('view3Tap');
+    
+  },
+  handleView1Capture() {
+    console.log('view1Capture');
+    
+  },
+  handleView2Capture() {
+    console.log('view2Capture');
+    
+  },
+  handleView3Capture() {
+    console.log('view3Capture');
+    
+  },
 })
