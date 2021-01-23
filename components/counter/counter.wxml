@@ -1,0 +1,8 @@
+<!--components/counter/counter.wxml-->
+<text>components/counter/counter.wxml</text>
+<view>
+  <cpn1></cpn1>
+  <text>{{counter}}</text>
+  <button bindtap="handleAdd">+</button>
+  <button bindtap="handleMinus">-</button>
+</view>
