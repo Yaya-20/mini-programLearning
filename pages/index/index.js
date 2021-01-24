@@ -50,5 +50,23 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleAdd(event) {
+    console.log(event);
+    // console.log(this.selectComponent('.box'));
+    const count  = this.selectComponent('.box')
+    count.setData({
+      counter: count.data.counter + 20
+    })
+    
+    
+  },
+  handleMinus(event) {
+    // console.log(event);
+    const count = this.selectComponent('.box')
+    console.log(count);
+    count.minus(10)
+    
+    
   }
 })

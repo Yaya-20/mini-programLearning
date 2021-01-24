@@ -1,0 +1,4 @@
+<!--components/counter/counter.wxml-->
+<view>
+  {{counter}}
+</view>

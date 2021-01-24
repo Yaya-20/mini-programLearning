@@ -11,3 +11,7 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<button bind:tap="handleAdd">+</button>
+<button bind:tap="handleMinus">-</button>
+<counter class="box"></counter>
