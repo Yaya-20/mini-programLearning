@@ -1,0 +1,14 @@
+/* components/cpn1.wxss */
+/* .title, */
+.content {
+  background-color: #ff9900;
+  color: #666666;
+  font-size: 30px;
+}
+#content {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 40px;
+}

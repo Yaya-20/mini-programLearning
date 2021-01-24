@@ -1,0 +1,5 @@
+<!--components/cpn1.wxml-->
+<view>
+  <text class="title">我是cpn1标题</text>
+  <text class="content">我是cpn1内容</text>
+</view>
