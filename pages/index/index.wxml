@@ -21,3 +21,5 @@
   <counter bind:add="handleAdd" bind:minus="handleMinus"></counter>
 </view>
 
+
+<tab-control tabList="{{['xxx', 'yyy', 'zzz', 'nnn']}}" bind:itemClick="handleTabClick"></tab-control>

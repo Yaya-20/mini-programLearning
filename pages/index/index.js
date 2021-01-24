@@ -63,5 +63,9 @@ Page({
     this.setData({
       counter: this.data.counter - 1
     })
+  },
+  handleTabClick(e) {
+    console.log(e);
+    
   }
 })
