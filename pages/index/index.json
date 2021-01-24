@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "cpn1": "/components/cpn1/cpn1"
+    "cpn1": "/components/cpn1/cpn1",
+    "counter": "/components/counter/counter"
   }
 }

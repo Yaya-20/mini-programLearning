@@ -1,0 +1,3 @@
+<!--components/counter/counter.wxml-->
+<button bind:tap="handleAdd">+</button>
+<button bind:tap="handleMinus">-</button>

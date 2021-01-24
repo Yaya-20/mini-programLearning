@@ -15,4 +15,9 @@
 <cpn1 title="我是标题" class="red"></cpn1>
 <cpn1 title="哈哈" content="下雪" class="green"></cpn1>
 <cpn1 title="呵呵" content="faff" class="blue"></cpn1>
+<view>--------------------------</view>
+<view>
+  {{counter}}
+  <counter bind:add="handleAdd" bind:minus="handleMinus"></counter>
+</view>
 
