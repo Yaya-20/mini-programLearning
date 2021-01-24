@@ -1,0 +1,6 @@
+<!--components/my-slot/my-slot.wxml-->
+<view>
+  <view>我是header</view>
+  <slot></slot>
+  <view>我是footer</view>
+</view>

@@ -1,0 +1,14 @@
+<!--components/multi-slot/multi-slog.wxml-->
+<view>
+  <view>11111</view>
+  <view class="view1">
+    <slot name="slot1"></slot>
+  </view>
+  <view class="view2">
+    <slot name="slot2"></slot>
+  </view>
+  <view class="view3">
+    <slot name="slot3"></slot>
+  </view>
+  <view>22222</view>
+</view>

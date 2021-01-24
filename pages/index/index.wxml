@@ -11,3 +11,22 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<my-slot>
+  <button>+</button>
+</my-slot>
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <text>我是text</text>
+  <slider value="60"></slider>
+</my-slot>
+
+<!-- 多个插槽的使用 
+  给每个插槽给个 name属性
+-->
+<multi-slot wx:if="{{isShow}}">
+  <text slot="slot3">哈哈哈</text>
+  <button slot="slot1">+</button>
+  <slider slot="slot2"></slider>
+</multi-slot>
+<button bind:tap="handleMove">删除</button>

@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isShow: true
   },
   // 事件处理函数
   bindViewTap() {
@@ -50,5 +51,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleMove() {
+    setTimeout(() => {
+      this.setData({
+        isShow: false
+      })
+    }, 3000)
   }
 })
