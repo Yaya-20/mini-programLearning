@@ -1,3 +1,4 @@
+import request from '../../utils/request'
 // index.js
 // 获取应用实例
 const app = getApp()
@@ -40,8 +41,20 @@ Page({
             hasUserInfo: true
           })
         }
-      })
+      })   
     }
+
+    request({
+      url: 'http://httpbin.org/get',
+      method: 'get',
+      data: {
+        name: 'xxx',
+        sex: 'male'
+      }
+    }).then(res => {
+      console.log(res);
+      
+    })
   },
   getUserInfo(e) {
     console.log(e)

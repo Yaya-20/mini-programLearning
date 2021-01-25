@@ -31,6 +31,38 @@ App({
           })
         }
       }
+
+    })
+    // get 请求
+    wx.request({
+      url: 'http://httpbin.org/get',
+      data: {
+        name: 'lucy',
+        age: 33
+      },
+      success: res => {
+        console.log(res);
+        
+      },
+      fail: function(err) {
+        console.log(err);
+        
+      }
+
+    })
+    // get 请求
+    wx.request({
+      url: 'http://httpbin.org/post',
+      method: 'post',
+      data: {
+        name: 'lucy',
+        age: 33,
+        sex: 44
+      },
+      success: function(res) {
+        console.log(res);
+        
+      }
     })
   },
   globalData: {
